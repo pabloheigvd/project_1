@@ -1,13 +1,13 @@
 package ch.heigvd.amt.mvcsimple.business;
 
-import ch.heigvd.amt.mvcsimple.model.Quote;
+import ch.heigvd.amt.mvcsimple.model.Question;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class QuestionGenerator {
 
-  public List<Quote> generateQuestions() {
+  public List<Question> generateQuestions() {
     List<Question> result = new ArrayList<>();
     result.add(new Question("Dr. Seuss", "Don't cry because it's over, smile because it happened."));
     result.add(new Question("Oscar Wilde", "Be yourself; everyone else is already taken."));
