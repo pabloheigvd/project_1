@@ -1,6 +1,6 @@
-package ch.heigvd.amt.mvcsimple.business;
+package ch.heigvd.amt.stack.business;
 
-import ch.heigvd.amt.mvcsimple.model.Question;
+import ch.heigvd.amt.stack.model.Question;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,14 +1,12 @@
-package ch.heigvd.amt.mvcsimple.presentation;
+package ch.heigvd.amt.stack.presentation;
 
-import ch.heigvd.amt.mvcsimple.business.QuestionGenerator;
-import ch.heigvd.amt.mvcsimple.model.Question;
+import ch.heigvd.amt.stack.business.QuestionGenerator;
+import ch.heigvd.amt.stack.model.Question;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ch.heigvd.amt.mvcsimple.model;
+package ch.heigvd.amt.stack.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
