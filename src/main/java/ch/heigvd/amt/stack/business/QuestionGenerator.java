@@ -9,9 +9,9 @@ public class QuestionGenerator {
 
   public List<Question> generateQuestions() {
     List<Question> result = new ArrayList<>();
-    result.add(new Question("Dr. Seuss", "Don't cry because it's over, smile because it happened."));
-    result.add(new Question("Oscar Wilde", "Be yourself; everyone else is already taken."));
-    result.add(new Question("Albert Einstein", "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."));
+    result.add(new Question("Wolfgang Fahl", "Overcoming single value constraing issues with P625 coordinate location in Wikidata"));
+    result.add(new Question("Aditya Yada", "JSON.stringify() without single quotes on value and no quotes on key"));
+    result.add(new Question("koper92", "pylint a dictionnary wich designated as unsubscriptable object"));
     return result;
   }
 }

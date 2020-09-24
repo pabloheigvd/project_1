@@ -1,11 +1,16 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Register Account</title>
+    <title>Login Account</title>
 </head>
 <body>
+
+<div id="navbar">
+    <%@ include file="fragments/navbar.jsp" %>
+</div>
+
 <h1>Login Account</h1>
 <form action="${pageContext.request.contextPath}/login.do" method="post">
     <p>Username</p>

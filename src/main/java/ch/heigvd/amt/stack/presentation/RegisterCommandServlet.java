@@ -16,12 +16,12 @@ import java.util.Map;
 public class RegisterCommandServlet extends HttpServlet {
     public static final Map<String,String> users = new HashMap<>();
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         User userModel = new User(username,password);
 
-        PrintWriter out = resp.getWriter();
+        PrintWriter out = response.getWriter();
 
         if(users.containsKey(userModel.getUsername())){
             out.println("existe deja !");

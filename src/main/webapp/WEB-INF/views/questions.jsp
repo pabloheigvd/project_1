@@ -5,10 +5,14 @@
     <title>List of questions</title>
 </head>
 <body>
-<h2>List of questions</h2>
+<div id="navbar">
+    <%@ include file="fragments/navbar.jsp" %>
+</div>
+<h1>List of questions</h1>
+
 <ul>
     <c:forEach items="${questions}" var="question">
-        <li>${question.author} : "${question.question}"</li>
+        <li>"${question.question} - ${question.author}"</li>
     </c:forEach>
 </ul>
 </body>

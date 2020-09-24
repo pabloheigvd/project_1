@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +6,11 @@
     <title>Register Account</title>
 </head>
 <body>
+
+<div id="navbar">
+    <%@ include file="fragments/navbar.jsp" %>
+</div>
+
 <h1>Register Account</h1>
     <form action="${pageContext.request.contextPath}/register.do" method="post">
         <p>Username</p>
@@ -13,7 +18,6 @@
         <p>Password</p>
         <input type="password" placeholder="password" name="password" required/>
         <input type="submit" value="Register">
-        <a href="login.jsp">Already have Account?</a>
     </form>
 </body>
 </html>
