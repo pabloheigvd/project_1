@@ -15,6 +15,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- StackOverflow hack -->
+    <!-- https://stackoverflow.com/questions/5351948/webxml-attribute-is-required-error-in-maven#:~:text=xml%20in%20your%20web%20project,xml%20file.&text=If%20you%20are%20migrating%20from,removed%20the%20need%20for%20web -->
+    <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
 
   <dependencies>
