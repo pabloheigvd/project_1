@@ -12,9 +12,9 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(urlPatterns="/RegisterCommandServlet")
+@WebServlet(name = "/RegisterCommandServlet", urlPatterns= "/register.do")
 public class RegisterCommandServlet extends HttpServlet {
-    private static final Map<String,String> users = new HashMap<>();
+    public static final Map<String,String> users = new HashMap<>();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
         String username = request.getParameter("username");
