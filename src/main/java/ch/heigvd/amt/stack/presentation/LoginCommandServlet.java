@@ -29,12 +29,17 @@ public class LoginCommandServlet extends HttpServlet {
       out.println("USER = " + user + " : " + pass);
     });
 
-    if(RegisterCommandServlet.users.containsKey(userModel.getUsername())) {
-      if(RegisterCommandServlet.users.get(userModel.getUsername()).equals(userModel.getPassword())) {
-        request.getRequestDispatcher("/WEB-INF/views/questions.jsp").forward(request, response);
+    boolean exist = false;
+    if (RegisterCommandServlet.users.containsKey(userModel.getUsername())) {
+      if (RegisterCommandServlet.users.get(userModel.getUsername()).equals(userModel.getPassword())) {
+        exist = true;
       }
     }
 
-    request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+    if (exist) {
+      response.sendRedirect(request.getContextPath() + "/");
+    } else {
+      response.sendRedirect(request.getContextPath() + "/login");
+    }
   }
 }
