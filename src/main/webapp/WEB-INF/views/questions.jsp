@@ -4,9 +4,13 @@
 <head>
     <title>List of questions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<<<<<<< HEAD
     <style type="text/css">
         <%@ include file="/assets/style.css" %>
     </style>
+=======
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css">
+>>>>>>> 449f19b3eda59d273ca1a7d45b0f56004054beac
 </head>
 <body>
 <div id="navbar">
