@@ -10,6 +10,7 @@
 #navbar{
     background-color: #272c40;
     min-height: 75px;
+    position: fixed;
 }
 
 h1{
@@ -22,6 +23,7 @@ p{
     font-family: Roboto;
     font-size: 24px;
     color: #272c40;
+    margin: 0;
 }
 
 input{
