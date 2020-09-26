@@ -44,9 +44,22 @@
       <artifactId>lombok</artifactId>
       <version>1.18.10</version>
     </dependency>
+    <dependency>
+      <groupId>io.openliberty</groupId>
+      <artifactId>openliberty-runtime</artifactId>
+      <version>[20.0.0.10,)</version>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
   <build>
     <finalName>stack</finalName>
+    <plugins>
+      <plugin>
+        <groupId>io.openliberty.tools</groupId>
+        <artifactId>liberty-maven-plugin</artifactId>
+        <version>3.2</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
