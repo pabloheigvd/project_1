@@ -35,17 +35,19 @@ jobs:
       - name: Maven build
         run: mvn clean package
 
-      - name: Install test environnement
-        # NOTE: this pins the action to a specific commit sha for security
-        # reasons but you can also use a version tag if desired. For example:
-        # ianwalter/puppeteer-container@v4.0.0
-        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
-        with:
-          args: pnpm i
-      - name: E2E tests
-        uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
-        with:
-          args: pnpm t
+      # Install test environnement functions but not E2E tests
+      #- name: Install test environnement
+      #  # NOTE: this pins the action to a specific commit sha for security
+      #  # reasons but you can also use a version tag if desired. For example:
+      #  # ianwalter/puppeteer-container@v4.0.0
+      #  uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+      #  with:
+      #    args: pnpm i
+      #
+      #- name: E2E tests
+      #  uses: ianwalter/puppeteer-container@acc52cd2334ad9eaf6e1974562d263e0a711b7e8
+      #  with:
+      #    args: pnpm t
           
       - name: Build Docker image and push it to ghcr
         run: |
