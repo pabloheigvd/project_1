@@ -1,3 +1,5 @@
 .idea/*
 target/*
 docker/images/payara/stack.war
+node_modules/*
+output/
