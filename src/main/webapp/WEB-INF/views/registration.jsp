@@ -15,6 +15,12 @@
     <form action="${pageContext.request.contextPath}/register.do" method="post">
         <p>Username</p>
         <input type="text" placeholder="username" name="username" required/>
+        <p>First name</p>
+        <input type="text" placeholder="firstname" name="firstname" required/>
+        <p>Last name</p>
+        <input type="text" placeholder="lastname" name="lastname" required/>
+        <p>Email</p>
+        <input type="text" placeholder="email" name="email" required/>
         <p>Password</p>
         <input type="password" placeholder="password" name="password" required/>
         <input type="submit" value="Register">
