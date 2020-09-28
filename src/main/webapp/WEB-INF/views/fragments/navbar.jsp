@@ -12,7 +12,7 @@
 </head>
 <body>
 <div>
-    <button onclick="window.location.href='/stack/';">Home</button>
+    <button onclick="window.location.href='/stack/';">Home!!!</button>
     <button onclick="window.location.href='/stack/register';">Registration</button>
     <button onclick="window.location.href='/stack/login';">Sign-in</button>
 </div>
